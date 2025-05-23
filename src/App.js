@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import "./App.css";
+import EntryStateEffect from "./hooks/stateAndEffect/entryStateEffect";
+import { GlobalContext } from "./hooks/useContext";
+import EntryContext from "./hooks/useContext/entryContext"
+import RenderRedeux from "./redux"
 
 function App() {
+  const {theme} = useContext(GlobalContext);
+  console.log("theme",theme);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <EntryStateEffect></EntryStateEffect>
+      <EntryContext></EntryContext>
+      <RenderRedeux></RenderRedeux>
+
     </div>
   );
 }
