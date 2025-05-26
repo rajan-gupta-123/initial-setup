@@ -8,7 +8,7 @@ const useStateAndEffect = () => {
   // const a = {};
 
   useEffect(() => {
-    console.log("rajan", "12");
+    // console.log("rajan", "12");
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((response) => response.json())
 

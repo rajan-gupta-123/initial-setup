@@ -3,7 +3,6 @@ const initialState = {
 };
 
 const AppReducer = (state = initialState, action) => {
-  console.log("Rajan", action.payload);
   switch (action.type) {
     case "INCREMENT":
       return {

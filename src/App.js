@@ -1,20 +1,34 @@
-import { useContext } from "react";
 import "./App.css";
-import EntryStateEffect from "./hooks/stateAndEffect/entryStateEffect";
-import { GlobalContext } from "./hooks/useContext";
-import EntryContext from "./hooks/useContext/entryContext"
-import RenderRedeux from "./redux"
+import Main from "./forwardRef";
+import UseReducer from "./hooks/reducer";
 
 function App() {
-  const {theme} = useContext(GlobalContext);
-  console.log("theme",theme);
+  // Below is generator function
+  function* generate() {
+    yield 1;
+    yield 2;
+    return 4;
+  }
+  const a = generate();
+
+  for (const value of a) {
+    console.log(value);
+  }
+  // console.log(a.next());
+  // console.log(a.next());
+  // console.log(a.next());
 
   return (
     <div className="App">
-      <EntryStateEffect></EntryStateEffect>
+      {/* <EntryStateEffect></EntryStateEffect>
       <EntryContext></EntryContext>
       <RenderRedeux></RenderRedeux>
-
+      <p>Belo is use Ref Example</p>
+      <TriggerUseRef></TriggerUseRef> */}
+      {/* <LayoutEffect></LayoutEffect>
+      <MemoCallback></MemoCallback> */}
+      <UseReducer></UseReducer>
+      <Main></Main>
     </div>
   );
 }
