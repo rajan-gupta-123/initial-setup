@@ -1,6 +1,5 @@
 import "./App.css";
-import Main from "./forwardRef";
-import UseReducer from "./hooks/reducer";
+import FetchApi from "./examples/fetchApi";
 
 function App() {
   // Below is generator function
@@ -27,8 +26,11 @@ function App() {
       <TriggerUseRef></TriggerUseRef> */}
       {/* <LayoutEffect></LayoutEffect>
       <MemoCallback></MemoCallback> */}
-      <UseReducer></UseReducer>
-      <Main></Main>
+      {/* <UseReducer></UseReducer>
+      <Main></Main> */}
+      {/* <ExampleMemo></ExampleMemo> */}
+      {/* <InputForm></InputForm> */}
+      <FetchApi></FetchApi>
     </div>
   );
 }
