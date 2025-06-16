@@ -2,13 +2,11 @@ import { useEffect, useState } from "react";
 const InputForm = () => {
   const [input, setInput] = useState("");
   const [names, setNames] = useState([]);
-  const temp = [];
   function onHandle(e) {
     setInput(e.target.value);
   }
   function addNames() {
     setNames([...names, input]);
-    temp.push(input);
     setInput("");
   }
   useEffect(() => {
