@@ -1,5 +1,5 @@
 import "./App.css";
-import FetchApi from "./examples/fetchApi";
+import Time from "./examples/time";
 
 function App() {
   // Below is generator function
@@ -30,7 +30,8 @@ function App() {
       <Main></Main> */}
       {/* <ExampleMemo></ExampleMemo> */}
       {/* <InputForm></InputForm> */}
-      <FetchApi></FetchApi>
+      {/* <FetchApi></FetchApi> */}
+      <Time></Time>
     </div>
   );
 }

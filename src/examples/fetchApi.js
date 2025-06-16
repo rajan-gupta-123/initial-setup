@@ -27,6 +27,12 @@ const FetchApi = () => {
   if (loading) {
     return <div>Loading Data....</div>;
   }
+  // setTimeout(() => {
+  //   console.log("I am time out only execute after specific timing");
+  // }, 1000);
+  // setInterval(() => {
+  //   console.log("I am time interval only keep on executing whatever time has mentioned")
+  // }, 5000);
   return (
     <div>
       <ul>
