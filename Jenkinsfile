@@ -30,7 +30,7 @@ pipeline {
             steps {
                 bat '''
                     echo "post phase started"
-                    ls chunks/develop/*
+                    dir chunks/develop/*
                     echo "post phase Ended"
                 '''
             }
