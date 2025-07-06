@@ -12,6 +12,7 @@ pipeline {
                 bat '''
                     npm cache clean --force
                     npm cache verify
+                    npm install react-scripts --save
                     npm install --legacy-peer-deps
                     echo "install phase ended"
                 '''
